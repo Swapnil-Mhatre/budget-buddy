@@ -24,7 +24,7 @@ import "../css/cardLayout.css";
 import { useLocation } from "react-router-dom";
 import { formatDate } from "../utils/Date";
 import { useContext } from "react";
-import { UIContextData } from "../Context/UIContext";
+import { UIContextData } from "../context/UIContext";
 
 const iconMap = {
   restaurant: MdRestaurant,

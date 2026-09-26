@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import {
   MdRestaurant,
   MdDirectionsCar,
@@ -17,7 +17,7 @@ import {
   MdMoreHoriz,
   MdClose,
 } from "react-icons/md";
-import { ExpenseContextData } from "../Context/ExpenseContext";
+import { ExpenseContextData } from "../context/ExpenseContext";
 import { InputButton } from "./CustomButtons";
 import { Selector } from "./CustomDropdown";
 

@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import "../css/report.css";
-import ExpenseOverview from "../Components/Reports Components/ExpenseOverview";
-import IncomeVsExpense from "../Components/Reports Components/IncomeExpense";
-import MonthlyTrend from "../Components/Reports Components/MonthlyTrend";
-import TopExpenses from "../Components/Reports Components/TopExpense";
+import ExpenseOverview from "../components/Reports Components/ExpenseOverview";
+import IncomeVsExpense from "../components/Reports Components/IncomeExpense";
+import MonthlyTrend from "../components/Reports Components/MonthlyTrend";
+import TopExpenses from "../components/Reports Components/TopExpense";
+import { ExpenseContextData } from "../context/ExpenseContext";
 import CustomDropdown from "../Components/CustomDropdown";
-import { ExpenseContextData } from "../Context/ExpenseContext";
 import { MdCalendarMonth } from "react-icons/md";
 import { getTodayString } from "../utils/Date";
 

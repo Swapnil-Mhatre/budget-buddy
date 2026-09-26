@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import "../css/Settings.css";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
-import { UIContextData } from "../Context/UIContext";
+import { UIContextData } from "../context/UIContext";
 import { Selector } from "../Components/CustomDropdown.jsx";
-import { CheckButton } from "../Components/CustomButtons.jsx";
-import { ExpenseContextData } from "../Context/ExpenseContext.jsx";
+import { CheckButton } from "../components/CustomButtons.jsx";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
 
 const Settings = () => {
   const { themeSettings, setThemeSettings } = useContext(UIContextData);

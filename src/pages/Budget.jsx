@@ -1,12 +1,15 @@
-import { MdAdd, MdClose, MdLightbulb } from "react-icons/md";
+import { MdAdd, MdClose } from "react-icons/md";
 import "../css/budget.css";
-import { AlertCard, ProgressBarCard } from "../Components/CardLayout";
-import { SummaryCard } from "../Components/CardLayout";
-import BudgetForm from "../Components/BudgetForm";
+import {
+  AlertCard,
+  ProgressBarCard,
+  SummaryCard,
+} from "../components/CardLayout";
+import BudgetForm from "../components/BudgetForm";
 import { useContext, useState } from "react";
-import { ExpenseContextData } from "../Context/ExpenseContext";
+import { ExpenseContextData } from "../context/ExpenseContext";
 import { calcOverall, getPercentage } from "../utils/Calculation";
-import { UIContextData } from "../Context/UIContext";
+import { UIContextData } from "../context/UIContext";
 
 export default function Budget() {
   const { categoryBudgets, deleteCategoryBudgets, alerts } =
@@ -115,9 +118,7 @@ export default function Budget() {
                   <AlertCard alert={alert} key={alert.id} />
                 ))
               ) : (
-                <div className="alert-box">
-                  Budget alerts are disabled
-                </div>
+                <div className="alert-box">Budget alerts are disabled</div>
               )}
             </div>
           </div>

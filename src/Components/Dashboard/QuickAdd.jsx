@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { QuickActionButton } from "../CustomButtons.jsx";
 import { MdArrowDownward, MdArrowUpward, MdMoney } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { ExpenseContextData } from "../../Context/ExpenseContext.jsx";
+import { ExpenseContextData } from "../../context/ExpenseContext.jsx";
 
 const QuickAdd = () => {
   const { setCategoryType, setTransaction, transaction } =

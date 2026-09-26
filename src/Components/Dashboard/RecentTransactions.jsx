@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { TransactionCard } from "../CardLayout";
 import { MdArrowForward } from "react-icons/md";
 import { useContext } from "react";
-import { ExpenseContextData } from "../../Context/ExpenseContext";
+import { ExpenseContextData } from "../../context/ExpenseContext";
 
 const RecentTransactions = () => {
   const { transactions } = useContext(ExpenseContextData);

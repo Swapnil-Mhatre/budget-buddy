@@ -9,7 +9,7 @@ import {
   Tooltip,
 } from "recharts";
 import { convertToMonthName } from "../../utils/Date";
-import { UIContextData } from "../../Context/UIContext";
+import { UIContextData } from "../../context/UIContext";
 
 const ExpenseTrend = ({ transactions, period }) => {
   const { themeSettings } = useContext(UIContextData);

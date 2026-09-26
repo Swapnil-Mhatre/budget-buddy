@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import CustomDropdown from "./CustomDropdown";
-import { ExpenseContextData } from "../Context/ExpenseContext";
+import { ExpenseContextData } from "../context/ExpenseContext";
 import { MdClose } from "react-icons/md";
 import { calcCategoryTotal, getPercentage } from "../utils/Calculation";
 

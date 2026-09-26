@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { InputButton } from "../CustomButtons.jsx";
 import { MdCategory } from "react-icons/md";
 import CustomDropdown from "../CustomDropdown.jsx";
-import { ExpenseContextData } from "../../Context/ExpenseContext.jsx";
+import { ExpenseContextData } from "../../context/ExpenseContext.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const AddExpenseForm = () => {

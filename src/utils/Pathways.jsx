@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Dashboard from "../Pages/Dashboard.jsx";
-import Transactions from "../Pages/Transactions.jsx";
-import AddTransaction from "../Pages/AddTransaction.jsx";
-import Categories from "../Pages/Categories.jsx";
-import Budget from "../Pages/Budget.jsx";
-import Reports from "../Pages/Reports.jsx";
-import Settings from "../Pages/Settings.jsx";
+import Dashboard from "../pages/Dashboard.jsx";
+import Transactions from "../pages/Transactions.jsx";
+import AddTransaction from "../pages/AddTransaction.jsx";
+import Categories from "../pages/Categories.jsx";
+import Budget from "../pages/Budget.jsx";
+import Reports from "../pages/Reports.jsx";
+import Settings from "../pages/Settings.jsx";
 
 const Pathways = () => {
   return (

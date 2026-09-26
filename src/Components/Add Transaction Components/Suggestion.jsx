@@ -1,5 +1,3 @@
-import React from "react";
-
 const Suggestion = () => {
   return (
     <aside className="quick-tips">

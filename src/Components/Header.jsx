@@ -8,8 +8,8 @@ import {
 } from "react-icons/md";
 import CustomDropdown from "./CustomDropdown";
 import { useContext, useEffect, useState } from "react";
-import { ExpenseContextData } from "../Context/ExpenseContext";
-import { UIContextData } from "../Context/UIContext";
+import { ExpenseContextData } from "../context/ExpenseContext";
+import { UIContextData } from "../context/UIContext";
 
 const Header = ({
   props = {

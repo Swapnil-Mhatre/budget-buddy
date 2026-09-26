@@ -10,7 +10,7 @@ import {
   MdSettings,
   MdClose,
 } from "react-icons/md";
-import { UIContextData } from "../Context/UIContext";
+import { UIContextData } from "../context/UIContext";
 import { NavLink, useLocation } from "react-router-dom";
 import "../css/sidebar.css";
 

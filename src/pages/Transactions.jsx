@@ -1,14 +1,14 @@
 import { useContext, useState, useEffect } from "react";
 import "../css/transaction.css";
-import { ExpenseContextData } from "../Context/ExpenseContext";
+import { ExpenseContextData } from "../context/ExpenseContext";
 import CustomDropdown from "../Components/CustomDropdown";
-import { TransactionCard } from "../Components/CardLayout";
+import { TransactionCard } from "../components/CardLayout";
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
   MdSearch,
 } from "react-icons/md";
-import { UIContextData } from "../Context/UIContext";
+import { UIContextData } from "../context/UIContext";
 
 const Transactions = () => {
   const {

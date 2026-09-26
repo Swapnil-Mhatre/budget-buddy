@@ -5,7 +5,7 @@ import {
   getCategoriesInfo,
   getPercentage,
 } from "../../utils/Calculation";
-import { UIContextData } from "../../Context/UIContext";
+import { UIContextData } from "../../context/UIContext";
 
 const colorMap = {
   "Food & Dining": "red",

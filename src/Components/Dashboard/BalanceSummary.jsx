@@ -5,8 +5,8 @@ import {
   MdPayments,
   MdSavings,
 } from "react-icons/md";
-import { SummaryCard } from "../../Components/CardLayout";
-import { ExpenseContextData } from "../../Context/ExpenseContext";
+import { SummaryCard } from "../CardLayout";
+import { ExpenseContextData } from "../../context/ExpenseContext";
 import { calcTypeTotal } from "../../utils/Calculation";
 
 const BalanceSummary = ({ periodTransactions }) => {

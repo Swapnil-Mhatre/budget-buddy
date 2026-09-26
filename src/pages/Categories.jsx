@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import "../css/category.css";
 import { MdAdd, MdAddCircleOutline } from "react-icons/md";
-import { CategoryCard } from "../Components/CardLayout";
-import { ExpenseContextData } from "../Context/ExpenseContext";
-import CategoryForm from "../Components/CategoryForm";
-import { UIContextData } from "../Context/UIContext";
+import { CategoryCard } from "../components/CardLayout";
+import { ExpenseContextData } from "../context/ExpenseContext";
+import CategoryForm from "../components/CategoryForm";
+import { UIContextData } from "../context/UIContext";
 
 const Categories = () => {
   const {
