@@ -1,0 +1,212 @@
+.settings {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    color: var(--text-color);
+}
+
+.setting-card {
+    padding: var(--spacing-lg);
+    background-color: var(--background-color);
+    border-radius: var(--radius-2xl);
+    border: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.setting-card span {
+    font-size: var(--size-lg)
+}
+
+.setting-card .theme,
+.setting-card .preference,
+.setting-card .data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting-card .theme>div {
+    display: flex;
+    gap: var(--spacing-sm)
+}
+
+.setting-card .theme-button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-2md) var(--spacing-xl);
+    font-size: var(--size-lg);
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--color-palette-gray);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.setting-card .theme-button svg {
+    font-size: var(--size-xl);
+}
+
+.theme-button.active {
+    color: var(--color-palette);
+    border: 2px solid var(--color-palette);
+    background-color: var(--color-palette-offWhite);
+}
+
+.outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-round);
+    height: 45px;
+    width: 45px;
+    box-sizing: content-box;
+}
+
+.outer.active {
+    border: 3px solid var(--color-palette);
+}
+
+.color-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.color-button {
+    width: 35px;
+    height: 35px;
+    border-radius: var(--radius-round);
+    border: none;
+    cursor: pointer;
+}
+
+.outer:nth-child(1) .color-button {
+    background-color: var(--color-palette-purple);
+}
+
+.outer:nth-child(2) .color-button {
+    background-color: var(--color-palette-blue);
+}
+
+.outer:nth-child(3) .color-button {
+    background-color: var(--color-palette-green);
+}
+
+.outer:nth-child(4) .color-button {
+    background-color: var(--color-palette-orange);
+}
+
+.outer:nth-child(5) .color-button {
+    background-color: var(--color-palette-red);
+}
+
+.dataset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.dataset .desc {
+    width: 70%;
+}
+
+.dataset .desc p {
+    color: var(--color-palette-gray);
+}
+
+.data .data-button {
+    width: 30%;
+    padding: var(--spacing-2md) var(--spacing-3xl);
+    font-size: var(--size-lg);
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+}
+
+.dataset .data:nth-child(2) .data-button {
+    color: var(--color-palette-red);
+    border: 2px solid var(--color-palette-red);
+    background-color: var(--color-palette-offWhite);
+}
+
+@media (max-width:1024px) {
+    .settings {
+        padding: var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+
+    .setting-card {
+        padding: var(--spacing-md);
+        border-radius: var(--radius-xl);
+        gap: var(--spacing-md);
+    }
+
+    .setting-card .theme-button {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: var(--size-md);
+    }
+
+    .outer {
+        height: 40px;
+        width: 40px;
+    }
+
+    .color-button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .data .data-button {
+        padding: var(--spacing-md) var(--spacing-2xl);
+        font-size: var(--size-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .setting-card .theme-button {
+        padding: var(--spacing-sm) var(--spacing-2md);
+    }
+
+    .outer {
+        height: 35px;
+        width: 35px;
+    }
+
+    .color-button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .data .data-button {
+        width: 35%;
+    }
+}
+
+@media (max-width:426px) {
+    .settings {
+        padding: var(--spacing-sm);
+        gap: var(--spacing-sm);
+    }
+
+    .setting-card .theme,
+    .setting-card .preference,
+    .setting-card .data {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm)
+    }
+
+    .dataset .desc {
+        width: 100%;
+    }
+
+    .data .data-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,185 @@
+.quick-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.quick-action span {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius-lg);
+    font-size: var(--size-3xl);
+}
+
+.quick-action strong {
+    font-size: var(--size-md);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* button 2 */
+
+button.transaction-type {
+    padding: var(--spacing-2md);
+    font-weight: 600;
+    font-size: var(--size-md);
+    width: 100%;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.category-form button.transaction-type {
+    padding: var(--spacing-sm);
+    font-weight: 400;
+    border-radius: var(--radius-md);
+}
+
+button.transaction-type.red {
+    background-color: var(--color-palette-red-transparent);
+    color: var(--color-palette-red);
+    border-color: 1px solid var(--color-palette-red);
+}
+
+button.transaction-type.green {
+    background-color: var(--color-palette-green-transparent);
+    color: var(--color-palette-green);
+    border-color: 1px solid var(--color-palette-green);
+}
+
+/* Check button */
+.check {
+    display: inline-block;
+    height: 30px;
+    width: 60px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.check__check {
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check__check:checked~.check__indicator {
+    background: var(--color-palette);
+}
+
+.check__check:checked~.check__indicator:after {
+    transform: translate(30px, 0);
+}
+
+.check__check,
+.check__indicator {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.check__indicator {
+    background: #ececec;
+    transition: background 0.25s ease;
+}
+
+.check__indicator:after {
+    height: 22px;
+    width: 22px;
+    background: #fff;
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.25s ease;
+}
+
+@media (max-width: 1280px) {
+    .quick-action span {
+        width: 50px;
+        height: 50px;
+    }
+
+    .quick-action strong {
+        font-size: var(--size-md);
+        font-weight: 600;
+        color: var(--text-color);
+    }
+}
+
+@media (max-width: 1024px) {
+    .quick-action span {
+        width: 40px;
+        height: 40px;
+        font-size: var(--size-2xl);
+    }
+
+    .quick-action strong {
+        font-size: var(--size-md);
+    }
+
+    .check {
+        height: 25px;
+        width: 50px;
+        border-radius: 12px;
+    }
+
+    .check__check:checked~.check__indicator:after {
+        transform: translate(25px, 0);
+    }
+
+    .check__indicator:after {
+        height: 20px;
+        width: 20px;
+        top: 2.5px;
+        left: 2.5px;
+    }
+}
+
+@media (max-width: 426px) {
+    button.transaction-type {
+        padding: var(--spacing-sm);
+        font-weight: 600;
+        font-size: var(--size-sm);
+        width: 100%;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--border-color);
+        background-color: var(--background-color);
+        text-transform: capitalize;
+        color: var(--text-color);
+    }
+
+    .category-form button.transaction-type {
+        padding: var(--spacing-sm);
+        font-weight: 400;
+        border-radius: var(--radius-md);
+    }
+
+    button.transaction-type.red {
+        background-color: var(--color-palette-red-transparent);
+        color: var(--color-palette-red);
+        border-color: 1px solid var(--color-palette-red);
+    }
+
+    button.transaction-type.green {
+        background-color: var(--color-palette-green-transparent);
+        color: var(--color-palette-green);
+        border-color: 1px solid var(--color-palette-green);
+    }
+}

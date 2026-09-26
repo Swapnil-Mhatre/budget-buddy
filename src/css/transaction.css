@@ -1,0 +1,308 @@
+.transaction-container {
+    margin: var(--spacing-lg);
+    background-color: var(--background-color);
+    padding: var(--spacing-2md);
+    border-radius: var(--radius-xl);
+    color: var(--text-color);
+}
+
+header.transaction-header,
+header.transaction-header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.transaction-header {
+    gap: var(--spacing-md);
+}
+
+header.transaction-header div {
+    gap: var(--spacing-xs);
+}
+
+.search-bar {
+    border: 1px solid var(--border-color);
+    padding: 0 var(--spacing-sm);
+    border-radius: var(--radius-md);
+}
+
+.search-bar svg {
+    font-size: var(--size-xl);
+}
+
+.search-bar input {
+    background-color: var(--background-color);
+    padding: var(--spacing-md) var(--spacing-sm);
+    border: none;
+    font-size: var(--size-md);
+}
+
+.search-bar input:focus {
+    outline: 1px solid var(--color-palette);
+}
+
+.filter-buttons button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-size: var(--size-lg);
+}
+
+.filter-buttons button.active {
+    background-color: var(--color-palette);
+    color: #fff;
+    font-weight: 600;
+}
+
+.transaction-list-container {
+    margin: var(--spacing-lg) 0;
+    width: 100%;
+}
+
+.list-heading {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 0.5fr 0.5fr;
+    padding: var(--spacing-md) var(--spacing-sm);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    font-size: var(--size-lg);
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+}
+
+.transaction-list-container .list-container {
+    min-height: 50vh;
+}
+
+.empty-container {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--size-3xl);
+}
+
+.transaction-list-container .transaction {
+    display: grid;
+    grid-template-columns: 50px 3fr 0.5fr 0.5fr;
+    align-items: center;
+    font-size: var(--size-md);
+    padding: var(--spacing-md) var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.transaction-list-container .transaction .content-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.transaction-list-container .transaction-info {
+    display: grid;
+    gap: var(--spacing-xs);
+    grid-template-columns: 1fr 1fr;
+}
+
+.transaction-list-container .transaction-menu {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.transaction-list-container .transaction-menu .custom {
+    font-size: var(--size-xl);
+    background-color: var(--background-color);
+    height: 30px;
+    width: 30px;
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2md);
+}
+
+.pagination .list-number {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.pagination-el {
+    font-size: var(--size-xl);
+    background-color: var(--color-palette-offWhite);
+    height: 50px;
+    width: 50px;
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.pagination-ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 40px;
+    color: var(--color-palette-gray);
+    font-size: var(--size-lg);
+}
+
+.pagination-el.active {
+    background-color: var(--color-palette-transparent);
+    border: 1px solid var(--color-palette);
+    color: var(--text-color)
+}
+
+.search-bar svg,
+.filter-buttons button:hover,
+.pagination svg:hover,
+.pagination-el:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .transaction-container {
+        margin: var(--spacing-2md);
+        padding: var(--spacing-md);
+    }
+
+    .filter-buttons button {
+        font-size: var(--size-md);
+    }
+
+    .transaction-list-container {
+        margin: var(--spacing-md) 0;
+    }
+
+    .empty-container {
+        font-size: var(--size-2xl);
+    }
+
+    .pagination .list-number {
+        gap: var(--spacing-md);
+    }
+
+    .pagination-el {
+        font-size: var(--size-lg);
+        height: 40px;
+        width: 40px;
+    }
+
+    .pagination-ellipsis {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header.transaction-header {
+        gap: var(--spacing-sm);
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        padding: 0 var(--spacing-xs);
+    }
+
+    .search-bar svg {
+        font-size: var(--size-lg);
+    }
+
+    .search-bar input {
+        padding: var(--spacing-md) var(--spacing-xs);
+        font-size: var(--size-sm);
+    }
+
+    .list-heading {
+        padding: var(--spacing-sm);
+        font-size: var(--size-md);
+    }
+
+    .transaction-list-container .transaction {
+        font-size: var(--size-sm);
+    }
+
+    .transaction-list-container .transaction-menu {
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 426px) {
+    .transaction-container {
+        margin: var(--spacing-sm);
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-md);
+    }
+
+    header.transaction-header {
+        gap: var(--spacing-xs);
+    }
+
+    header.transaction-header div {
+        gap: var(--spacing-md);
+    }
+
+    .search-bar {
+        width: 100%;
+        border-radius: var(--radius-md);
+    }
+
+    .search-bar input {
+        width: 100%;
+        padding: var(--spacing-sm);
+    }
+
+    .list-heading {
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+    }
+
+    .transaction-list-container .transaction {
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        font-size: var(--size-md);
+    }
+
+    .transaction-list-container .transaction .content-box {
+        grid-template-columns: 1fr;
+    }
+
+    .transaction-list-container .transaction-info {
+        grid-template-columns: 1fr;
+    }
+
+    .transaction-list-container .transaction-menu {
+        gap: var(--spacing-xs);
+    }
+
+    .pagination {
+        gap: var(--spacing-sm);
+    }
+
+    .pagination .list-number {
+        gap: var(--spacing-sm);
+    }
+
+    .pagination-el {
+        height: 30px;
+        width: 30px;
+        padding: var(--spacing-xs);
+    }
+
+    .pagination-el .custom {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pagination-ellipsis {
+        width: 30px;
+        height: 30px;
+    }
+}
