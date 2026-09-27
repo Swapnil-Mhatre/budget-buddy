@@ -8,8 +8,8 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
-import { convertToMonthName } from "../../utils/Date";
-import { UIContextData } from "../../context/UIContext";
+import { convertToMonthName } from "../../utils/Date.jsx";
+import { UIContextData } from "../../context/UIContext.jsx";
 
 const ExpenseTrend = ({ transactions, period }) => {
   const { themeSettings } = useContext(UIContextData);

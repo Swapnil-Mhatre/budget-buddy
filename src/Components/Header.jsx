@@ -6,10 +6,10 @@ import {
   MdNotificationsNone,
   MdPerson,
 } from "react-icons/md";
-import CustomDropdown from "./CustomDropdown";
+import CustomDropdown from "./CustomDropdown.jsx"
 import { useContext, useEffect, useState } from "react";
-import { ExpenseContextData } from "../context/ExpenseContext";
-import { UIContextData } from "../context/UIContext";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
+import { UIContextData } from "../context/UIContext.jsx";
 
 const Header = ({
   props = {

@@ -4,12 +4,12 @@ import {
   AlertCard,
   ProgressBarCard,
   SummaryCard,
-} from "../components/CardLayout";
-import BudgetForm from "../components/BudgetForm";
+} from "../components/CardLayout.jsx";
+import BudgetForm from "../components/BudgetForm.jsx";
 import { useContext, useState } from "react";
-import { ExpenseContextData } from "../context/ExpenseContext";
-import { calcOverall, getPercentage } from "../utils/Calculation";
-import { UIContextData } from "../context/UIContext";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
+import { calcOverall, getPercentage } from "../utils/Calculation.jsx";
+import { UIContextData } from "../context/UIContext.jsx";
 
 export default function Budget() {
   const { categoryBudgets, deleteCategoryBudgets, alerts } =

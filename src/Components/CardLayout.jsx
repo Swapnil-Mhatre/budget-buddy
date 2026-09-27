@@ -22,9 +22,9 @@ import {
 } from "react-icons/md";
 import "../css/cardLayout.css";
 import { useLocation } from "react-router-dom";
-import { formatDate } from "../utils/Date";
+import { formatDate } from "../utils/Date.jsx";
 import { useContext } from "react";
-import { UIContextData } from "../context/UIContext";
+import { UIContextData } from "../context/UIContext.jsx";
 
 const iconMap = {
   restaurant: MdRestaurant,

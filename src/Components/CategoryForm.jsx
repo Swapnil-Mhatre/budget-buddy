@@ -17,9 +17,9 @@ import {
   MdMoreHoriz,
   MdClose,
 } from "react-icons/md";
-import { ExpenseContextData } from "../context/ExpenseContext";
-import { InputButton } from "./CustomButtons";
-import { Selector } from "./CustomDropdown";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
+import { InputButton } from "./CustomButtons.jsx";
+import { Selector } from "./CustomDropdown.jsx";
 
 const icons = [
   {

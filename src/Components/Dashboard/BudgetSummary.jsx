@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { ProgressBarCard } from "../CardLayout";
-import { ExpenseContextData } from "../../context/ExpenseContext";
+import { ProgressBarCard } from "../CardLayout.jsx";
+import { ExpenseContextData } from "../../context/ExpenseContext.jsx";
 
 const BudgetSummary = () => {
   const { categoryBudgets } = useContext(ExpenseContextData);

@@ -1,13 +1,13 @@
 import "../css/dashboard.css";
-import ExpenseOverview from "../components/Reports Components/ExpenseOverview";
-import ExpenseTrend from "../components/Dashboard/ExpenseTrend";
-import RecentTransactions from "../components/Dashboard/RecentTransactions";
-import BudgetSummary from "../components/Dashboard/BudgetSummary";
-import QuickAdd from "../components/Dashboard/QuickAdd";
-import BalanceSummary from "../components/Dashboard/BalanceSummary";
+import ExpenseOverview from "../components/Reports Components/ExpenseOverview.jsx";
+import ExpenseTrend from "../components/Dashboard/ExpenseTrend.jsx";
+import RecentTransactions from "../components/Dashboard/RecentTransactions.jsx";
+import BudgetSummary from "../components/Dashboard/BudgetSummary.jsx";
+import QuickAdd from "../components/Dashboard/QuickAdd.jsx";
+import BalanceSummary from "../components/Dashboard/BalanceSummary.jsx";
 import { useContext, useEffect, useState } from "react";
-import { ExpenseContextData } from "../context/ExpenseContext";
-import { getTodayString } from "../utils/Date";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
+import { getTodayString } from "../utils/Date.jsx";
 
 const Dashboard = () => {
   const { transactions, filterByRange, filterBy } =

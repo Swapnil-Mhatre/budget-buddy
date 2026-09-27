@@ -4,8 +4,8 @@ import {
   calcOverall,
   getCategoriesInfo,
   getPercentage,
-} from "../../utils/Calculation";
-import { UIContextData } from "../../context/UIContext";
+} from "../../utils/Calculation.jsx";
+import { UIContextData } from "../../context/UIContext.jsx";
 
 const colorMap = {
   "Food & Dining": "red",

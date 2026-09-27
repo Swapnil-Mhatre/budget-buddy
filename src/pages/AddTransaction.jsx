@@ -1,6 +1,6 @@
 import "../css/addTransaction.css";
-import AddExpenseForm from "../components/Add Transaction Components/AddExpenseForm";
-import Suggestion from "../components/Add Transaction Components/Suggestion";
+import AddExpenseForm from "../components/Add Transaction Components/AddExpenseForm.jsx";
+import Suggestion from "../components/Add Transaction Components/Suggestion.jsx";
 
 const AddTransaction = () => {
   return (

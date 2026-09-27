@@ -1,13 +1,13 @@
 import { useContext, useEffect, useState } from "react";
 import "../css/report.css";
-import ExpenseOverview from "../components/Reports Components/ExpenseOverview";
-import IncomeVsExpense from "../components/Reports Components/IncomeExpense";
-import MonthlyTrend from "../components/Reports Components/MonthlyTrend";
-import TopExpenses from "../components/Reports Components/TopExpense";
-import { ExpenseContextData } from "../context/ExpenseContext";
-import CustomDropdown from "../Components/CustomDropdown";
+import ExpenseOverview from "../components/Reports Components/ExpenseOverview.jsx";
+import IncomeVsExpense from "../components/Reports Components/IncomeExpense.jsx";
+import MonthlyTrend from "../components/Reports Components/MonthlyTrend.jsx";
+import TopExpenses from "../components/Reports Components/TopExpense.jsx";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
+import CustomDropdown from "../Components/CustomDropdown.jsx";
 import { MdCalendarMonth } from "react-icons/md";
-import { getTodayString } from "../utils/Date";
+import { getTodayString } from "../utils/Date.jsx";
 
 const Reports = () => {
   const { months, transactions, filterByRange, filterBy, setFilterBy } =

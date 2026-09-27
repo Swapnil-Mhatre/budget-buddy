@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import CustomDropdown from "./CustomDropdown";
-import { ExpenseContextData } from "../context/ExpenseContext";
+import CustomDropdown from "./CustomDropdown.jsx";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
 import { MdClose } from "react-icons/md";
-import { calcCategoryTotal, getPercentage } from "../utils/Calculation";
+import { calcCategoryTotal, getPercentage } from "../utils/Calculation.jsx";
 
 const BudgetForm = ({ closeModal }) => {
   const { categoriesList, transactions, setCategoryBudgets, currentMonth } =

@@ -1,6 +1,5 @@
 import { useContext, useEffect } from "react";
 import {
-  MdDashboard,
   MdHome,
   MdReceipt,
   MdAdd,
@@ -10,7 +9,7 @@ import {
   MdSettings,
   MdClose,
 } from "react-icons/md";
-import { UIContextData } from "../context/UIContext";
+import { UIContextData } from "../context/UIContext.jsx";
 import { NavLink, useLocation } from "react-router-dom";
 import "../css/sidebar.css";
 
@@ -29,8 +28,8 @@ const Sidebar = () => {
   return (
     <nav className={`sidebar ${sidebarStatus ? "isOpen" : ""}`}>
       <div className="logo">
-        <MdDashboard className="custom" />
-        {sidebarStatus ? <h2>Expense Tracker</h2> : ""}
+        <img src="../../favicon.png" alt="" className="custom-img" />
+        {sidebarStatus ? <h2>Budget Buddy</h2> : ""}
         {width <= 426 && (
           <MdClose className="custom" onClick={() => setSidebarStatus(false)} />
         )}

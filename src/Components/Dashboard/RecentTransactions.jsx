@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { TransactionCard } from "../CardLayout";
+import { TransactionCard } from "../CardLayout.jsx";
 import { MdArrowForward } from "react-icons/md";
 import { useContext } from "react";
-import { ExpenseContextData } from "../../context/ExpenseContext";
+import { ExpenseContextData } from "../../context/ExpenseContext.jsx";
 
 const RecentTransactions = () => {
   const { transactions } = useContext(ExpenseContextData);

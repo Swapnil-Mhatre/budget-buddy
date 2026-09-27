@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { convertDateToString, convertToMonthName } from "../../utils/Date";
+import { convertToMonthName } from "../../utils/Date.jsx";
 
 const MonthlyTrend = ({ transactions, period }) => {
   const [uniquePeriod, setUniquePeriod] = useState([]);

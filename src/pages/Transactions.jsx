@@ -1,8 +1,8 @@
 import { useContext, useState, useEffect } from "react";
 import "../css/transaction.css";
-import { ExpenseContextData } from "../context/ExpenseContext";
-import CustomDropdown from "../Components/CustomDropdown";
-import { TransactionCard } from "../components/CardLayout";
+import { ExpenseContextData } from "../context/ExpenseContext.jsx";
+import CustomDropdown from "../components/CustomDropdown.jsx";
+import { TransactionCard } from "../components/CardLayout.jsx";
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,

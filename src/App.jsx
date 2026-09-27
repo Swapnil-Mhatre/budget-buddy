@@ -1,6 +1,6 @@
-import Header from "./Components/Header";
-import Pathways from "./utils/Pathways";
-import Sidebar from "./Components/Sidebar";
+import Header from "./components/Header";
+import Pathways from "./utils/Pathways.jsx";
+import Sidebar from "./components/Sidebar";
 import { useLocation } from "react-router-dom";
 
 const App = () => {

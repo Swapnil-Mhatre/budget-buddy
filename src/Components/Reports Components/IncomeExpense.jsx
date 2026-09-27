@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { calcTypeTotal } from "../../utils/Calculation";
+import { calcTypeTotal } from "../../utils/Calculation.jsx";
 
 const IncomeVsExpense = ({ transactions }) => {
   const data = [
