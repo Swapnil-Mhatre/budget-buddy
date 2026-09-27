@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "../css/Settings.css";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { UIContextData } from "../context/UIContext.jsx";
-import { Selector } from "../Components/CustomDropdown.jsx";
+import { Selector } from "../components/CustomDropdown.jsx";
 import { CheckButton } from "../components/CustomButtons.jsx";
 import { ExpenseContextData } from "../context/ExpenseContext.jsx";
 
